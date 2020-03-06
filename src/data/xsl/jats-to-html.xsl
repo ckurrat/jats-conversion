@@ -137,15 +137,16 @@
 
     <!-- any label -->
     <xsl:template match="label">
-        <span class="article-label">
-            <xsl:apply-templates select="node()|@*"/>
+        
+       <span class="article-label">
+            <xsl:apply-templates select="node()|@*"/> 
         </span>
     </xsl:template>
 
     <xsl:template match="label" mode="caption">
         <span class="caption-label">
             <xsl:apply-templates select="node()|@*"/>
-            <xsl:text>:&#32;</xsl:text>
+            <xsl:text>&#32;</xsl:text>
         </span>
     </xsl:template>
 
@@ -505,6 +506,7 @@
     <xsl:template match="sec">
         <section class="{local-name()}">
             <xsl:apply-templates select="node()|@*"/>
+            <br/>
         </section>
     </xsl:template>
 

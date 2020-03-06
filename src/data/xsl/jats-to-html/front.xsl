@@ -124,6 +124,7 @@
 
     <!-- abstract -->
     <xsl:template match="abstract">
+        <!-- Soll hier die Abstract Überschrift doppelt vorkommen??? -->
         <div>
             <h2>Abstract</h2>
             <div class="{local-name()}" itemprop="description">

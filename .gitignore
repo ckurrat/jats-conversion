@@ -1,3 +1,7 @@
 robots.txt
 vendor
 composer.lock
+newProject.xpr
+/nbproject/private/
+nbproject/project.properties
+nbproject/project.xml

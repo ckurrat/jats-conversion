@@ -5,7 +5,7 @@ $jats = new \PeerJ\Conversion\JATS;
 
 // load the XML
 $document = new DOMDocument;
-$document->load(__DIR__ . '/example.xml', LIBXML_DTDLOAD | LIBXML_DTDVALID | LIBXML_NONET | LIBXML_NOENT);
+$document->load(__DIR__ . '/2020-03-02_JATS_Muster_f_MAK.xml', LIBXML_DTDLOAD | LIBXML_DTDVALID | LIBXML_NONET | LIBXML_NOENT);
 
 // convert to HTML
 $document = $jats->generateHTML($document);
@@ -32,6 +32,7 @@ foreach ($scripts as $script) {
 
 // inject CSS
 $styles = array(
+    'jats-preview.css',
     'css/layout.css',
     'vendor/qunit/qunit.css',
 );
